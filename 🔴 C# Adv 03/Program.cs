@@ -178,30 +178,31 @@ namespace __C__Adv_03
             //#endregion
             //Console.WriteLine("\n-----------------------------\n");
             //Console.WriteLine("\n--------------\n");
+            #endregion
             #region Q5 Print Queue Simulator
 
 
-            Queue<string> Simulator = new();
-            Simulator.Enqueue("Report.pdf");
-            Simulator.Enqueue("Invoice.pdf");
-            Simulator.Enqueue("Letter.docx");
-            Simulator.Enqueue("Resume.pdf");
-            Simulator.Enqueue("Photo.jpg");
-            Console.WriteLine(Simulator.Count);
-            Console.WriteLine("Documents in queue: " + string.Join(", ", Simulator));
-            Console.WriteLine("Next document to print: " + Simulator.Peek());
+            //Queue<string> Simulator = new();
+            //Simulator.Enqueue("Report.pdf");
+            //Simulator.Enqueue("Invoice.pdf");
+            //Simulator.Enqueue("Letter.docx");
+            //Simulator.Enqueue("Resume.pdf");
+            //Simulator.Enqueue("Photo.jpg");
+            //Console.WriteLine(Simulator.Count);
+            //Console.WriteLine("Documents in queue: " + string.Join(", ", Simulator));
+            //Console.WriteLine("Next document to print: " + Simulator.Peek());
 
-            // Process the queue
-            while (Simulator.Count > 0)
-            {
-                Console.WriteLine("Printing: " + Simulator.Dequeue());
-            }
+            //// Process the queue
+            //while (Simulator.Count > 0)
+            //{
+            //    Console.WriteLine("Printing: " + Simulator.Dequeue());
+            //}
 
-            // Try TryDequeue on the now-empty queue
-            if (!Simulator.TryDequeue(out string nextDocument))
-            {
-                Console.WriteLine("No more documents in the queue.");
-            }
+            //// Try TryDequeue on the now-empty queue
+            //if (!Simulator.TryDequeue(out string nextDocument))
+            //{
+            //    Console.WriteLine("No more documents in the queue.");
+            //}
 
 
             #endregion
