@@ -80,70 +80,71 @@ namespace __C__Adv_03
             //#endregion
             //Console.WriteLine("\n-----------------------------\n");
             //Console.WriteLine("\n--------------\n");
-             #region Q3  Build a phone book application.
+            #endregion
+            #region Q3  Build a phone book application.
 
-            Dictionary<string, string> phoneBook = new Dictionary<string, string>
-        {
-            { "Alice", "111-222-3333" },
-            { "Bob", "444-555-6666" },
-            { "Charlie", "777-888-9999" },
-            { "David", "000-111-2222" }
-            };
-            Console.WriteLine("Initial Phone Book:");
-            PrintPhoneBook(phoneBook);
-            //adding
-            Console.WriteLine("\nAdding a new contact (Eve) using [] syntax:");
-            phoneBook["Eve"] = "333-444-5555";
-            Console.WriteLine("Phone Book after adding Eve:");
-            PrintPhoneBook(phoneBook);
-            //updating
-            Console.WriteLine("\nUpdating Bob's number using [] syntax:");
-            phoneBook["Bob"] = "999-888-7777";
-            Console.WriteLine("Phone Book after updating Bob:");
-            PrintPhoneBook(phoneBook);
-            //add()
-            Console.WriteLine("\nAttempting to add a duplicate (Alice) using .Add():");
-            try
-            {
-                phoneBook.Add("Alice", "123-456-7890");
-                Console.WriteLine("Alice added successfully (this should not happen).");
-            }
-            catch (ArgumentException ex)
-            {
-                Console.WriteLine($"Error: {ex.Message}");
-            }
-            //tryadd
-            Console.WriteLine("\nAttempting to add a duplicate (Charlie) using .TryAdd():");
-            bool tryAddSucceeded = phoneBook.TryAdd("Charlie", "555-666-7777");
-            Console.WriteLine($"TryAdd for Charlie succeeded: {tryAddSucceeded}");
-            Console.WriteLine("Phone Book after TryAdd for Charlie:");
-            PrintPhoneBook(phoneBook);
-            //dosnot exit
-            Console.WriteLine("\nSearching for a non-existent contact (Grace):");
-            if (phoneBook.ContainsKey("Grace"))
-            {
-                Console.WriteLine($"Grace's number: {phoneBook["Grace"]}");
-            }
-            else
-            {
-                Console.WriteLine("Grace not found in phone book.");
+        //    Dictionary<string, string> phoneBook = new Dictionary<string, string>
+        //{
+        //    { "Alice", "111-222-3333" },
+        //    { "Bob", "444-555-6666" },
+        //    { "Charlie", "777-888-9999" },
+        //    { "David", "000-111-2222" }
+        //    };
+        //    Console.WriteLine("Initial Phone Book:");
+        //    PrintPhoneBook(phoneBook);
+        //    //adding
+        //    Console.WriteLine("\nAdding a new contact (Eve) using [] syntax:");
+        //    phoneBook["Eve"] = "333-444-5555";
+        //    Console.WriteLine("Phone Book after adding Eve:");
+        //    PrintPhoneBook(phoneBook);
+        //    //updating
+        //    Console.WriteLine("\nUpdating Bob's number using [] syntax:");
+        //    phoneBook["Bob"] = "999-888-7777";
+        //    Console.WriteLine("Phone Book after updating Bob:");
+        //    PrintPhoneBook(phoneBook);
+        //    //add()
+        //    Console.WriteLine("\nAttempting to add a duplicate (Alice) using .Add():");
+        //    try
+        //    {
+        //        phoneBook.Add("Alice", "123-456-7890");
+        //        Console.WriteLine("Alice added successfully (this should not happen).");
+        //    }
+        //    catch (ArgumentException ex)
+        //    {
+        //        Console.WriteLine($"Error: {ex.Message}");
+        //    }
+        //    //tryadd
+        //    Console.WriteLine("\nAttempting to add a duplicate (Charlie) using .TryAdd():");
+        //    bool tryAddSucceeded = phoneBook.TryAdd("Charlie", "555-666-7777");
+        //    Console.WriteLine($"TryAdd for Charlie succeeded: {tryAddSucceeded}");
+        //    Console.WriteLine("Phone Book after TryAdd for Charlie:");
+        //    PrintPhoneBook(phoneBook);
+        //    //dosnot exit
+        //    Console.WriteLine("\nSearching for a non-existent contact (Grace):");
+        //    if (phoneBook.ContainsKey("Grace"))
+        //    {
+        //        Console.WriteLine($"Grace's number: {phoneBook["Grace"]}");
+        //    }
+        //    else
+        //    {
+        //        Console.WriteLine("Grace not found in phone book.");
 
-            }
-            //feedback
-            Console.WriteLine("\nGetting a contact (David) with fallback:");
-            string davidNumber;
-            if (phoneBook.TryGetValue("David", out davidNumber))
-            {
-                Console.WriteLine($"David's number: {davidNumber}");
-            }
-            else
-            {
-                Console.WriteLine("David not found (this should not happen).");
-            }
+        //    }
+        //    //feedback
+        //    Console.WriteLine("\nGetting a contact (David) with fallback:");
+        //    string davidNumber;
+        //    if (phoneBook.TryGetValue("David", out davidNumber))
+        //    {
+        //        Console.WriteLine($"David's number: {davidNumber}");
+        //    }
+        //    else
+        //    {
+        //        Console.WriteLine("David not found (this should not happen).");
+        //    }
 
-            Console.WriteLine("\nGetting a non-existent contact (Harry) with fallback:");
-            string harryNumber = phoneBook.GetValueOrDefault("Harry", "Not Found");
-            Console.WriteLine($"Harry's number: {harryNumber}");
+        //    Console.WriteLine("\nGetting a non-existent contact (Harry) with fallback:");
+        //    string harryNumber = phoneBook.GetValueOrDefault("Harry", "Not Found");
+        //    Console.WriteLine($"Harry's number: {harryNumber}");
             #endregion
 
             Console.WriteLine("\n-----------------------------\n");
