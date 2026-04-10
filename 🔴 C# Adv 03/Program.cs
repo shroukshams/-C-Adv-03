@@ -46,39 +46,40 @@ namespace __C__Adv_03
             //#endregion
             //Console.WriteLine("\n-----------------------------\n");
             //Console.WriteLine("\n-------------------------------------------------\n");
-            #region Q2 Leaderboard Management
-            
-            SortedDictionary<int, string> leaderboard = new SortedDictionary<int, string>();
-            leaderboard.Add(500, "Ahmed");
-            leaderboard.Add(200, "Sara");
-            leaderboard.Add(800, "Ali  ");
-            leaderboard.Add(350, "Mona");
-            Console.WriteLine("Leaderboard:");
-            foreach (var entry in leaderboard)
-            {
-                Console.WriteLine($"Score: {entry.Key}, Player: {entry.Value}");
-            }                                   
-            var firstEntry = leaderboard.First();
-            Console.WriteLine($"First Entry - Score: {firstEntry.Key}, Player: {firstEntry.Value}");
-            bool hasScore500 = leaderboard.ContainsKey(500);
-            Console.WriteLine("Contains score of 500: " + hasScore500);
-            if (leaderboard.TryGetValue(999, out string? player999))
-            {
-                Console.WriteLine("Player with score 999: " + player999);
-            }
-            else
-            {
-                Console.WriteLine("No player with score 999 found.");
-            }
-            leaderboard.Remove(200);
-            Console.WriteLine("Updated Leaderboard:");
-            foreach (var entry in leaderboard)
-            {
-                Console.WriteLine($"Score: {entry.Key}, Player: {entry.Value}");
-            }
             #endregion
-            Console.WriteLine("\n-----------------------------\n");
-            Console.WriteLine("\n--------------\n");
+            #region Q2 Leaderboard Management
+
+            //SortedDictionary<int, string> leaderboard = new SortedDictionary<int, string>();
+            //leaderboard.Add(500, "Ahmed");
+            //leaderboard.Add(200, "Sara");
+            //leaderboard.Add(800, "Ali  ");
+            //leaderboard.Add(350, "Mona");
+            //Console.WriteLine("Leaderboard:");
+            //foreach (var entry in leaderboard)
+            //{
+            //    Console.WriteLine($"Score: {entry.Key}, Player: {entry.Value}");
+            //}                                   
+            //var firstEntry = leaderboard.First();
+            //Console.WriteLine($"First Entry - Score: {firstEntry.Key}, Player: {firstEntry.Value}");
+            //bool hasScore500 = leaderboard.ContainsKey(500);
+            //Console.WriteLine("Contains score of 500: " + hasScore500);
+            //if (leaderboard.TryGetValue(999, out string? player999))
+            //{
+            //    Console.WriteLine("Player with score 999: " + player999);
+            //}
+            //else
+            //{
+            //    Console.WriteLine("No player with score 999 found.");
+            //}
+            //leaderboard.Remove(200);
+            //Console.WriteLine("Updated Leaderboard:");
+            //foreach (var entry in leaderboard)
+            //{
+            //    Console.WriteLine($"Score: {entry.Key}, Player: {entry.Value}");
+            //}
+            //#endregion
+            //Console.WriteLine("\n-----------------------------\n");
+            //Console.WriteLine("\n--------------\n");
              #region Q3  Build a phone book application.
 
             Dictionary<string, string> phoneBook = new Dictionary<string, string>
