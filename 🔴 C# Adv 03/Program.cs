@@ -26,26 +26,26 @@ namespace __C__Adv_03
         {
 
             #region Q1
-            List<int> grades = new List<int> { 85, 92, 78, 95, 88, 70, 100, 65 };
-            Console.WriteLine("Grades: " + string.Join(", ", grades));
-            Console.WriteLine("Count: " + grades.Count);
-            Console.WriteLine("First Grade: " + grades.First());
-            Console.WriteLine("Last Grade: " + grades.Last());
-            grades.Sort();
-            Console.WriteLine("Sorted Grades: " + string.Join(", ", grades));
-            int firstAbove90 = grades.FirstOrDefault(g => g > 90);
-            Console.WriteLine("First Grade Above 90: " + firstAbove90);
-            var failingGrades = grades.Where(g => g < 75).ToList();
-            Console.WriteLine("Failing Grades: " + string.Join(", ", failingGrades));
-            grades.RemoveAll(g => g < 75);
-            Console.WriteLine("Grades after removing failing ones: " + string.Join(", ", grades));
-            bool hasPerfectScore = grades.Contains(100);
-            Console.WriteLine("Contains grade of 100: " + hasPerfectScore);
-            List<string> gradeStrings = grades.Select(g => $"Grade: {g}").ToList();
-            Console.WriteLine("Grade Strings: " + string.Join(", ", gradeStrings));
-            #endregion
-            Console.WriteLine("\n-----------------------------\n");
-            Console.WriteLine("\n-------------------------------------------------\n");
+            //List<int> grades = new List<int> { 85, 92, 78, 95, 88, 70, 100, 65 };
+            //Console.WriteLine("Grades: " + string.Join(", ", grades));
+            //Console.WriteLine("Count: " + grades.Count);
+            //Console.WriteLine("First Grade: " + grades.First());
+            //Console.WriteLine("Last Grade: " + grades.Last());
+            //grades.Sort();
+            //Console.WriteLine("Sorted Grades: " + string.Join(", ", grades));
+            //int firstAbove90 = grades.FirstOrDefault(g => g > 90);
+            //Console.WriteLine("First Grade Above 90: " + firstAbove90);
+            //var failingGrades = grades.Where(g => g < 75).ToList();
+            //Console.WriteLine("Failing Grades: " + string.Join(", ", failingGrades));
+            //grades.RemoveAll(g => g < 75);
+            //Console.WriteLine("Grades after removing failing ones: " + string.Join(", ", grades));
+            //bool hasPerfectScore = grades.Contains(100);
+            //Console.WriteLine("Contains grade of 100: " + hasPerfectScore);
+            //List<string> gradeStrings = grades.Select(g => $"Grade: {g}").ToList();
+            //Console.WriteLine("Grade Strings: " + string.Join(", ", gradeStrings));
+            //#endregion
+            //Console.WriteLine("\n-----------------------------\n");
+            //Console.WriteLine("\n-------------------------------------------------\n");
             #region Q2 Leaderboard Management
             
             SortedDictionary<int, string> leaderboard = new SortedDictionary<int, string>();
