@@ -211,35 +211,35 @@ namespace __C__Adv_03
             Console.WriteLine("\n--------------\n");
             #region Q6
         
-            Stack<string> browserHistory = new Stack<string>();
-            browserHistory.Push("google.com");
-            browserHistory.Push("github.com");
-            browserHistory.Push("stackoverflow.com");
-            browserHistory.Push("youtube.com");
-            browserHistory.Push("claude.ai");
-            Console.WriteLine("Current page: " + browserHistory.Peek());
-            Console.WriteLine("Pressing back...");
-            for (int i = 0; i < 3; i++)
-            {
-                if (browserHistory.Count > 0)
-                {
-                    string leftPage = browserHistory.Pop();
-                    Console.WriteLine("Left page: " + leftPage);
-                }
-                else
-                {
-                    Console.WriteLine("No more pages to go back to.");
-                    break;
-                }
-            }
-            if (browserHistory.Count > 0)
-            {
-                Console.WriteLine("Current page after going back: " + browserHistory.Peek());
-            }
-            else
-            {
-                Console.WriteLine("No current page (history is empty).");
-            }
+            //Stack<string> browserHistory = new Stack<string>();
+            //browserHistory.Push("google.com");
+            //browserHistory.Push("github.com");
+            //browserHistory.Push("stackoverflow.com");
+            //browserHistory.Push("youtube.com");
+            //browserHistory.Push("claude.ai");
+            //Console.WriteLine("Current page: " + browserHistory.Peek());
+            //Console.WriteLine("Pressing back...");
+            //for (int i = 0; i < 3; i++)
+            //{
+            //    if (browserHistory.Count > 0)
+            //    {
+            //        string leftPage = browserHistory.Pop();
+            //        Console.WriteLine("Left page: " + leftPage);
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("No more pages to go back to.");
+            //        break;
+            //    }
+            //}
+            //if (browserHistory.Count > 0)
+            //{
+            //    Console.WriteLine("Current page after going back: " + browserHistory.Peek());
+            //}
+            //else
+            //{
+            //    Console.WriteLine("No current page (history is empty).");
+            //}
 
 
             #endregion 
