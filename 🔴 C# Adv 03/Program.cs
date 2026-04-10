@@ -151,33 +151,33 @@ namespace __C__Adv_03
             Console.WriteLine("\n--------------\n");
 
             #region Q4 Use Collection to manage unique email addresses.
-            var emailSet = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
-            // Add emails
-            emailSet.Add("ahmed@test.com");
-            emailSet.Add("AHMED@test.com");
-            emailSet.Add("sara@test.com");
-            emailSet.Add("Sara@Test.Com");
-            // Print Count
-            Console.WriteLine($"Unique email count: {emailSet.Count}"); // Should be 2
+            //var emailSet = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+            //// Add emails
+            //emailSet.Add("ahmed@test.com");
+            //emailSet.Add("AHMED@test.com");
+            //emailSet.Add("sara@test.com");
+            //emailSet.Add("Sara@Test.Com");
+            //// Print Count
+            //Console.WriteLine($"Unique email count: {emailSet.Count}"); // Should be 2
 
 
-            // Create two sets
-            var setA = new HashSet<int> { 1, 2, 3, 4, 5 };
-            var setB = new HashSet<int> { 4, 5, 6, 7, 8 };
-            // Print UnionWith
-            setA.UnionWith(setB);
-            Console.WriteLine("Union: " + string.Join(", ", setA));
-            // Print IntersectWith
-            setA.IntersectWith(setB);
-            Console.WriteLine("Intersection: " + string.Join(", ", setA));
-            // Print ExceptWith
-            setA.ExceptWith(setB);
-            Console.WriteLine("Except: " + string.Join(", ", setA));
-            // Check subset
-            Console.WriteLine($"Is {{ 1, 2 }} a subset of Set A? " + (setA.IsSubsetOf(new HashSet<int> { 1, 2 })));
-            #endregion
-            Console.WriteLine("\n-----------------------------\n");
-            Console.WriteLine("\n--------------\n");
+            //// Create two sets
+            //var setA = new HashSet<int> { 1, 2, 3, 4, 5 };
+            //var setB = new HashSet<int> { 4, 5, 6, 7, 8 };
+            //// Print UnionWith
+            //setA.UnionWith(setB);
+            //Console.WriteLine("Union: " + string.Join(", ", setA));
+            //// Print IntersectWith
+            //setA.IntersectWith(setB);
+            //Console.WriteLine("Intersection: " + string.Join(", ", setA));
+            //// Print ExceptWith
+            //setA.ExceptWith(setB);
+            //Console.WriteLine("Except: " + string.Join(", ", setA));
+            //// Check subset
+            //Console.WriteLine($"Is {{ 1, 2 }} a subset of Set A? " + (setA.IsSubsetOf(new HashSet<int> { 1, 2 })));
+            //#endregion
+            //Console.WriteLine("\n-----------------------------\n");
+            //Console.WriteLine("\n--------------\n");
             #region Q5 Print Queue Simulator
 
 
